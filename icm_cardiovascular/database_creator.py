@@ -2,6 +2,7 @@ from dash import Dash, dcc, html, Input, Output, State, callback_context, except
 import dash_bootstrap_components as dbc
 from datetime import datetime
 from pathlib import Path
+from typing import Optional, Union
 import pandas as pd
 import re
 import os
@@ -60,7 +61,7 @@ def iter_patient_dirs(root: Path, immediate_only=True):
             if p.is_dir():
                 yield p
 
-def find_info_file(subfolder: Path, case_insensitive=True, fallback_glob=None) -> Path | None:
+def find_info_file(subfolder: Path, case_insensitive=True, fallback_glob=None) -> Optional[Path]:
     # Prefer exact "{folder}.info"
     exact = subfolder / f"{subfolder.name}.info"
     if exact.exists() and exact.is_file():
