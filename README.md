@@ -12,9 +12,36 @@ A comprehensive Python package for creating and viewing ICM+ cardiovascular data
 
 ## Installation & Usage
 
-You can use this package in three different ways:
+You can use this package in different ways:
 
-### Method 1: One-Click Installation (Recommended for beginners)
+### Method 1: Simplest using Conda
+
+1. **Create and activate a conda environment:**
+   ```bash
+   conda create -n icm-cardio python=3.9
+   conda activate icm-cardio
+
+   pip install git+https://github.com/elgraniti/ICM_Cardiovascular_app.git
+   ```
+2. **Use the command-line tools:**
+   ```bash
+   # Database Creator
+   icm-database-creator
+   
+   # ICM Database Viewer
+   icm-database-viewer
+   ```
+
+3. **OR Run the applications:**
+   ```bash
+   # Database Creator
+   python database_creator.py
+   
+   # ICM Database Viewer
+   python icm_cardiovascular/icm_database.py
+   ```
+
+### Method 2: One-Click Installation 
 Use the provided installation scripts for automatic setup:
 
 **On macOS/Linux:**
@@ -34,7 +61,7 @@ These scripts will:
 - Install the package in development mode
 - Test the installation
 
-### Method 2: Direct Script Execution (Simple)
+### Method 3: Direct Script Execution 
 Perfect for users who want to run the scripts directly in a conda environment:
 
 1. **Create and activate a conda environment:**
@@ -57,7 +84,7 @@ Perfect for users who want to run the scripts directly in a conda environment:
    python icm_cardiovascular/icm_database.py
    ```
 
-### Method 3: Install as a Package (Advanced)
+### Method 4: Install as a Package (Advanced)
 For users who want to install the package and use command-line tools:
 
 1. **Create and activate a conda environment:**
@@ -182,7 +209,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Support
 
 For issues and questions, please use the GitHub issue tracker:
-https://github.com/yourusername/ICM_Cardiovascular_app/issues
+https://github.com/ai/ICM_Cardiovascular_app/issues
 
 ## Changelog
 

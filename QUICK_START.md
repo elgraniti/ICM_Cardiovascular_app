@@ -2,7 +2,7 @@
 
 ## Two Ways to Use ICM Cardiovascular App
 
-### 🚀 Method 1: Simple Direct Scripts (Recommended for Conda users)
+### Method 1: Simple Direct Scripts (Recommended for Conda users)
 
 ```bash
 # 1. Set up conda environment
@@ -17,7 +17,7 @@ python database_creator.py    # Creates databases at localhost:8050
 python icm_database.py        # Views databases at localhost:8055
 ```
 
-### 📦 Method 2: Pip Package Installation
+### Method 2: Pip Package Installation
 
 ```bash
 # 1. Install package

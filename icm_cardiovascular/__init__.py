@@ -1,7 +1,7 @@
 """
 ICM Cardiovascular Application Package
 
-A comprehensive tool for creating and managing ICM+ cardiovascular databases.
+A comprehensive tool for creating and managing ICM+ file and location to create cardiovascular databases.
 Includes both database creation and visualization capabilities.
 """
 
