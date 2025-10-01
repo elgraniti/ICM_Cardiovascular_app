@@ -19,6 +19,7 @@ A comprehensive Python package for creating and viewing ICM+ cardiovascular data
 ![Data Visualization Examples](images/data_visualization.png)
 
 ### Database Filters and Saving
+![Data Filtering sample ](images/data_filtering_sample.png)
 ![Data Filtering and Saving Interface](images/data_filtering_saving.png)
 
 ### Database Creator Interface
