@@ -9,12 +9,16 @@
 conda create -n icm-cardio python=3.9
 conda activate icm-cardio
 
-# 2. Install dependencies
-pip install -r requirements.txt
+# 2. Install package and dependencies
+pip install git+https://github.com/elgraniti/ICM_Cardiovascular_app.git
 
 # 3. Run the apps
 python database_creator.py    # Creates databases at localhost:8050
 python icm_database.py        # Views databases at localhost:8055
+
+# 2. Use command-line tools
+icm-database-creator    # Creates databases at localhost:8050
+icm-database-viewer     # Views databases at localhost:8055
 ```
 
 ### Method 2: Pip Package Installation

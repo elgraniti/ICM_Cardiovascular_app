@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Setup script for ICM Cardiovascular App pa
+Setup script for ICM Plus Database Creator and Viewer Application Package
 """
 
 from setuptools import setup, find_packages
@@ -35,15 +35,15 @@ def read_requirements():
 setup(
     name="icm-cardiovascular",
     version="1.0.0",
-    author="Your Name",
-    author_email="your.email@example.com",
-    description="ICM+ Cardiovascular Database Creator and Viewer",
+    author="Victor Torres",
+    author_email="victor.torreslopez@yale.edu",
+    description="ICM+ File Database Creator and Viewer",
     long_description=read_readme(),
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/ICM_Cardiovascular_app",
+    url="https://github.com/elgraniti/ICM_Cardiovascular_app",
     packages=find_packages(),
     classifiers=[
-        "Development Status :: 4 - Beta",
+        "Development Status :: 5 - Beta",
         "Intended Audience :: Science/Research",
         "Intended Audience :: Healthcare Industry",
         "Topic :: Scientific/Engineering :: Medical Science Apps.",
@@ -77,9 +77,9 @@ setup(
     package_data={
         "icm_cardiovascular": ["*.txt", "*.md"],
     },
-    keywords="cardiovascular, database, medical, icm, dash, data-analysis",
+    keywords="icmPlus, database, medical, icm, dash, data-analysis",
     project_urls={
-        "Bug Reports": "https://github.com/yourusername/ICM_Cardiovascular_app/issues",
-        "Source": "https://github.com/yourusername/ICM_Cardiovascular_app",
+        "Bug Reports": "https://github.com/elgraniti/ICM_Cardiovascular_app/issues",
+        "Source": "https://github.com/elgraniti/ICM_Cardiovascular_app",
     },
 )

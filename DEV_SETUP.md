@@ -6,7 +6,7 @@ For developers who want to contribute or modify the code:
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/yourusername/ICM_Cardiovascular_app.git
+git clone https://github.com/elgraniti/ICM_Cardiovascular_app.git
 cd ICM_Cardiovascular_app
 
 # 2. Create development environment
