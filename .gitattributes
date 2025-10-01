@@ -1,0 +1,12 @@
+# Mark certain files as binary (won't show diffs)
+*.db binary
+*.sqlite binary
+*.xlsx binary
+
+# Exclude from language statistics
+*.md linguist-documentation
+*.txt linguist-documentation
+
+# Mark as generated (collapsed by default)
+dist/* linguist-generated=true
+build/* linguist-generated=true
