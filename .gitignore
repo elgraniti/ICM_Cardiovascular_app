@@ -50,6 +50,9 @@ Thumbs.db
 *.sqlite
 *.sqlite3
 
+# Uploaded databases folder (no longer created)
+uploaded_databases/
+
 # Logs
 *.log
 logs/

@@ -245,7 +245,7 @@ def scan_icm_folders(root_paths, immediate_only=True, case_insensitive=True, fal
     
     return df
 
-def create_database(df, db_path, db_type="duckdb", table_name="main_cardiovascular_table", log_callback=None):
+def create_database(df, db_path, db_type="duckdb", table_name="main_ICMPlus_table", log_callback=None):
     if log_callback:
         log_callback(f"Creating {db_type} database at {db_path}")
     
@@ -275,7 +275,7 @@ def create_database(df, db_path, db_type="duckdb", table_name="main_cardiovascul
             log_callback(f"Error creating database: {str(e)}", "error")
         return False
 
-def update_database(df, db_path, table_name="main_cardiovascular_table", log_callback=None):
+def update_database(df, db_path, table_name="main_ICMPlus_table", log_callback=None):
     if log_callback:
         log_callback(f"Updating database at {db_path}")
     

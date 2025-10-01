@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import sqlite3
 import os
+import tempfile
 from datetime import datetime
 from io import StringIO
 
@@ -915,12 +916,12 @@ def handle_upload(contents, filename, db_type_selection):
     
     content_type, content_string = contents.split(',')
     decoded = base64.b64decode(content_string)
-    os.makedirs('uploaded_databases', exist_ok=True)
-    safe_name = (filename or 'uploaded.db').replace(' ', '_')
-    save_path = os.path.join('uploaded_databases', safe_name)
     
-    with open(save_path, 'wb') as f:
-        f.write(decoded)
+    # Create a temporary file that gets cleaned up automatically
+    temp_file = tempfile.NamedTemporaryFile(delete=False, suffix='.db' if filename and filename.endswith('.db') else '.duckdb')
+    temp_file.write(decoded)
+    temp_file.close()
+    save_path = temp_file.name
     
     # Auto-detect or use specified type
     if db_type_selection == 'auto':
