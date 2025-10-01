@@ -1018,10 +1018,10 @@ def create_app():
                         dbc.InputGroup([
                             dbc.Input(id="database-path", 
                                       placeholder="Path to save the database file",
-                                      value=f"CardiovascularLab_DB_{datetime.now().strftime('%Y%m%d_%H%M%S')}.duckdb"),
+                                      value=f"/path/to/CardiovascularLab_DB_{datetime.now().strftime('%Y%m%d_%H%M%S')}.duckdb"),
                             dbc.InputGroupText(".duckdb", id="db-extension")
                         ]),
-                        html.Small("Enter a path where the database file will be saved", className="text-muted mb-3")
+                        html.Small("Enter a path where the database file will be saved. Example: /Desktop/ICMPlus/Databases/database.duckdb", className="text-muted mb-3")
                     ])
                 ]),
                 
@@ -1031,7 +1031,7 @@ def create_app():
                         html.Label("ICM+ Files Directory Path", className="mb-2"),
                         dbc.Textarea(id="icm-dirs", 
                                    placeholder="Enter one or more directories containing ICM+ files (separate multiple paths with semicolons)",
-                                   value="/Volumes/Cerebrovascular Lab/ICM+ Main Data Folder/HBM Files",
+                                   value="/Path/to/ICM+ Main Data Folder/HBM Files",
                                    style={"height": "100px"}),
                         html.Small([
                             "Enter one or more paths to folders containing ICM+ files. ",
@@ -1065,8 +1065,8 @@ def create_app():
                             html.Label("Output CSV File Path", className="mb-2"),
                             dbc.Input(id="csv-path", 
                                      placeholder="Path to save the CSV file",
-                                     value=f"catalog_tables_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"),
-                            html.Small("Enter a path where the CSV file will be saved", className="text-muted mb-3")
+                                     value=f"path/to/catalog_tables_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"),
+                            html.Small("Enter a path where the CSV file will be saved. Example: /Desktop/ICMPlus/catalogFolder/catalog_tables.csv", className="text-muted mb-3")
                         ], id="csv-path-container")
                     ])
                 ]),
@@ -1107,8 +1107,8 @@ def create_app():
                         html.Label("Existing Database File Path", className="mb-2"),
                         dbc.Input(id="database-path", 
                                  placeholder="Path to the existing database file",
-                                 value="CardiovascularLab_DB.duckdb"),
-                        html.Small("Enter the path to the existing database file", className="text-muted mb-3")
+                                 value="/path/to/CardiovascularLab_DB.duckdb"),
+                        html.Small("Enter the path to the existing database file, example: /Desktop/ICMPlus/Databases/CardiovascularLab_DB.duckdb", className="text-muted mb-3")
                     ])
                 ]),
                 
@@ -1152,8 +1152,8 @@ def create_app():
                             html.Label("Output CSV File Path", className="mb-2"),
                             dbc.Input(id="csv-path", 
                                      placeholder="Path to save the CSV file",
-                                     value=f"update_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"),
-                            html.Small("Enter a path where the CSV file will be saved", className="text-muted mb-3")
+                                     value=f"/path/to/update_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"),
+                            html.Small("Enter a path where the CSV file will be saved, example: /Desktop/ICMPlus/catalogFolder_update/update_data.csv", className="text-muted mb-3")
                         ], id="csv-path-container")
                     ])
                 ]),
