@@ -11,9 +11,5 @@ This folder contains screenshots and images used in the README.md file.
 - `data_visualization.png` - Example charts and graphs
 
 
-## Usage in README:
-```markdown
-![Alt text](images/filename.png)
-```
 
 

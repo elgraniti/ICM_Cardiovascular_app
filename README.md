@@ -10,27 +10,22 @@ A comprehensive Python package for creating and viewing ICM+ cardiovascular data
 - **Filtering & Visualization**: Advanced filtering options and data visualization capabilities
 - **Export Functionality**: Export filtered data to CSV format
 
-## Example:
-- **Database Main functionality:**
-   ```markdown
-   ![Alt text](images/database_viewer_main.png)
-   ```
-- **Database Visualization:**
-   ```markdown
-   ![Alt text](images/data_visualization.png)
-   ```
-- **Database Filters Saving:**
-   ```markdown
-   ![Alt text](images/data_filtering_saving.png)
-   ```
-- **Database Creator Operations:**
-   ```markdown
-   ![Alt text](images/database_creator_interface.png)
-   ```
-- **Database Update Operations:**
-   ```markdown
-   ![Alt text](images/database_update_interface.png)
-   ```
+## Screenshots
+
+### Database Main Functionality
+![Database Viewer Main Interface](images/database_viewer_main.png)
+
+### Database Visualization
+![Data Visualization Examples](images/data_visualization.png)
+
+### Database Filters and Saving
+![Data Filtering and Saving Interface](images/data_filtering_saving.png)
+
+### Database Creator Interface
+![Database Creator Operations](images/database_creator_interface.png)
+
+### Database Update Operations
+![Database Update Interface](images/database_update_interface.png)
 
 
 ## Installation & Usage
