@@ -238,7 +238,7 @@ app.layout = html.Div([
             html.Div(id='selected-table-header'),
             html.Div(id='filter-summary', className="mb-2"),
             html.Div([html.B("Total Records: "), html.Span(id="record-count")], className="mb-3"),
-            html.Div(id='table-container', className="overflow-auto", style={"maxHeight": "420px"}),
+            html.Div(id='table-container', className="overflow-auto", style={"maxHeight": "820px"}),
 
             html.Hr(),
             dbc.Button("Show Visualization", id="toggle-viz-btn", color="secondary", outline=True, className="mb-3"),
